@@ -1,5 +1,5 @@
 function assertEquals(a, b) {
-  if (a == b) {
+  if (a === b) {
     let message = `Test Passed: Value == ${b}`;
     console.log(message)
   } else {
