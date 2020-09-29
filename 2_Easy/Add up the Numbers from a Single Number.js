@@ -1,6 +1,5 @@
 const Test = require('../test.js');
 
-/* START SOLUTION AREA */
 /**
  * Add up the Numbers from a Single Number
  * @see https://edabit.com/challenge/4gzDuDkompAqujpRi
@@ -23,10 +22,10 @@ function addUp(num) {
   }
   return num + addUp(num - 1); */
 }
-/* E N D SOLUTION AREA */
 
+// Other Solution
+// let addUp = num => (num * (num + 1)) / 2;
 
-/* START TEST AREA */
 Test.assertEquals(addUp(4), 10)
 Test.assertEquals(addUp(13), 91)
 Test.assertEquals(addUp(600), 180300)
@@ -42,4 +41,3 @@ Test.assertEquals(addUp(1), 1)
 Test.assertEquals(addUp(999), 499500)
 Test.assertEquals(addUp(175), 15400)
 Test.assertEquals(addUp(111), 6216)
-/* E N D TEST AREA */
